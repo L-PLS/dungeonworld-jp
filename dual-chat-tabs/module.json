@@ -1,0 +1,28 @@
+{
+	"name": "dual-chat-tabs",
+	"title": "Dual Chat Tabs",
+	"description": "チャットログが２つのタブに分かれ、セッションのメインの発言と雑談用の発言を分けて行えるようになります",
+	"version": "0.1.0",
+	"minimumCoreVersion": "9",
+	"compatibleCoreVersion": "9",
+	"author": "L_PLS",
+	"esmodules": [
+		"./dual-chat-tabs.js"
+	],
+	"scripts": [],
+	"styles": [
+		"/styles/dual-chat-tabs.css"
+	],
+	"languages": [
+		{
+			"lang": "ja",
+			"name": "日本語",
+			"path": "languages/ja.json"
+		},
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		}
+	]
+}

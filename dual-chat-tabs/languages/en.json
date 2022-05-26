@@ -1,0 +1,6 @@
+{
+    "dualchattabs.SETTINGS.FirstTabName": "FirstTabName",
+    "dualchattabs.SETTINGS.FirstTabNameHint": "The first tab shows the player character's talks and dice roll results.",
+    "dualchattabs.SETTINGS.SecondTabName": "SecondTabName",
+    "dualchattabs.SETTINGS.SecondTabNameHint": "The second tab shows the player's statements. If you make a dice roll on this tab, the result will be shown on the first tab."
+}
