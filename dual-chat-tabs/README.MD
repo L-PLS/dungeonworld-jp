@@ -7,7 +7,7 @@
 
 以下のリンクをMODとしてインストールしてください。
 
-* リンク： xxxx
+* リンク： https://github.com/L-PLS/dual-chat-tabs/releases/download/latest/module.json
 
 ### 内容
 チャットタブが、「main」と「sub」のふたつに分けられ、「main」タブを選択した状態で発言された場合は「main」タブのログに、「sub」タブを選択した状態で発言された場合は「sub」タブのログに書き込まれます。

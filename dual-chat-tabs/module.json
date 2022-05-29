@@ -24,5 +24,8 @@
 			"name": "English",
 			"path": "languages/en.json"
 		}
-	]
+	],
+     "url": "https://github.com/L-PLS/dual-chat-tabs/tree/main/dual-chat-tabs",
+     "manifest": "https://github.com/L-PLS/dual-chat-tabs/releases/download/latest/module.json",
+     "download": "https://github.com/L-PLS/dual-chat-tabs/releases/download/0.1.0/module.zip"
 }
