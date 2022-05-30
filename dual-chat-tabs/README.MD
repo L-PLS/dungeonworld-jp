@@ -17,8 +17,9 @@
 タブ名は設定で変更できます。
 
 このMOD導入前の発言に関しては以下のルールで「main」「sub」に発言が振り分けられます。
-・「sub」……プレイヤー発言
-・「main」……プレイヤー発言以外
+* 「sub」……プレイヤー発言
+* 「main」……プレイヤー発言以外
+
 通常、FVTTではコマを選択しない状態でのGM発言はプレイヤー発言となっているため、「sub」タブに振り分けられます。違和感があるかもしれませんが仕様とします。
 MODを導入した状態では、コマを選択しない状態のGMであっても、「main」タブを選択して発言すれば、「main」に、「sub」タブを選択して発言すれば、「sub」にそれぞれ書き込みます(ダイスロールはすべて「main」に)。
 
@@ -31,8 +32,9 @@ I would like to modify the log export feature, but have not yet decided when to 
 You can change the tab name in the settings.
 
 The logs before activation of this mod will be divided into "main" and "sub" tabs with the following rules.
-・"sub" tab …… Out of character's messages
-・"main" tab …… other than Out of character's messages
+* "sub" tab …… Out of character's messages
+* "main" tab …… other than Out of character's messages
+
 Normally, in FVTT, the game master's posts with no tokens selected are recorded in Out of character's messages. Therefore, the logs are assigned to the "sub" tab. You may feel uncomfortable. But this is the specification of this mod.
 After activating this mod, even if you are a game master with no tokens selected, if you select the "main" tab and write, this mod will log to "main". Similarly, if you select and write in the "sub" tab, the mod will record in "sub" respectively (except for die rolls).
 
