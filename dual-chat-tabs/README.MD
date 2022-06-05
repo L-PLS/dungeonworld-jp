@@ -1,7 +1,7 @@
 # Dual Chat Tabs
 
 * **製作者**: L_PLS (Twitter：@L_PLS)
-* **modバージョン**: 0.1.0
+* **modバージョン**: 0.1.1
 
 ### インストール方法
 
@@ -24,7 +24,7 @@
 MODを導入した状態では、コマを選択しない状態のGMであっても、「main」タブを選択して発言すれば、「main」に、「sub」タブを選択して発言すれば、「sub」にそれぞれ書き込みます(ダイスロールはすべて「main」に)。
 
 
-The chat tab will be divided into two tabs, "main" and "sub". If you write to the chat with the "main" tab selected, the mod will write to the log of the "main" tab. Similarly, if you write to the chat with the "sub" tab selected, the mod will write to the log of the "sub" tab.
+The chat tab will be divided into two tabs, "main" and "sub". If you write to the chat with the "main" tab selected, the mod will write toあ the log of the "main" tab. Similarly, if you write to the chat with the "sub" tab selected, the mod will write to the log of the "sub" tab.
 Your posts in the "main" tab will be written to In character's message.
 Your posts in the "sub" tab will be written as Out of character's messages. Also, if you make a die roll while you have the "sub" tab selected, the result will be written to the "main" tab.
 I have not modified the log export in this mod, so the logs are output in chronological order, with no distinction between "main" and "sub".
@@ -40,6 +40,9 @@ After activating this mod, even if you are a game master with no tokens selected
 
 ### 感謝
 このMODは、Cody Swendrowski <cody@swendrowski.us>様の、Tabbed Chatlog(https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog)をベースに開発されました。
+
+### リリースノート
+0.1.1 ダイスロールの結果が通知されていなかったのを修正
 
 ### ライセンス
 GNU Lesser General Public License

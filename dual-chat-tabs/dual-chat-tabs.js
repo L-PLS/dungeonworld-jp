@@ -6,22 +6,6 @@ const debouncedReload = debounce(() => window.location.reload(), 100);
 function isMessageTypeVisible(messageType) {
 
     switch (currentTab) {
-        case "rolls":
-            switch (messageType) {
-                case CONST.CHAT_MESSAGE_TYPES.OTHER:
-                    return true;
-                case CONST.CHAT_MESSAGE_TYPES.OOC:
-                    return false;
-                case CONST.CHAT_MESSAGE_TYPES.IC:
-                    return false
-                case CONST.CHAT_MESSAGE_TYPES.EMOTE:
-                    return false
-                case CONST.CHAT_MESSAGE_TYPES.WHISPER:
-                    return false;
-                case CONST.CHAT_MESSAGE_TYPES.ROLL:
-                    return true;
-            }
-            break;
         case "ic":
             switch (messageType) {
                 case CONST.CHAT_MESSAGE_TYPES.OTHER:
@@ -101,7 +85,6 @@ Hooks.on("renderChatLog", async function (chatLog, html, user) {
             currentTab = tab;
 
             switch (tab) {
-                case "rolls":
                 case "ic":
                 case "ooc":
                     setClassVisibility($(".type0"), isMessageTypeVisible(CONST.CHAT_MESSAGE_TYPES.OTHER));
@@ -147,18 +130,7 @@ Hooks.on("renderChatMessage", (chatMessage, html, data) => {
 
     var sceneMatches = true;
 
-    if (currentTab == "rolls") {
-        if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER && sceneMatches) {
-            html.css("display", "list-item");
-        } else if (data.message.type == CONST.CHAT_MESSAGE_TYPES.ROLL && sceneMatches) {
-            if (!html.hasClass('gm-roll-hidden')) {
-                html.css("display", "list-item");
-            }
-        } else {
-            html.css("cssText", "display: none !important;");
-            html.addClass("hardHide");
-        }
-    } else if (currentTab == "ic") {
+    if (currentTab == "ic") {
         if ((data.message.type == CONST.CHAT_MESSAGE_TYPES.IC
     	  || data.message.type == CONST.CHAT_MESSAGE_TYPES.EMOTE
 		  || data.message.type == CONST.CHAT_MESSAGE_TYPES.WHISPER) && sceneMatches) {
@@ -199,22 +171,10 @@ Hooks.on("createChatMessage", (chatMessage, content) => {
         }
     }
 
-    if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER) {
-       if(!japanmode){
-           if (currentTab != "rolls" && sceneMatches) {
-               setRollsNotifyProperties();
-               $("#rollsNotification").show();
-           }
-       }
-    } else if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.ROLL) {
-        if(!japanmode){
-            if (currentTab != "rolls" && sceneMatches && chatMessage.data.whisper.length == 0) {
-                setRollsNotifyProperties();
-                $("#rollsNotification").show();
-            }
-        }
-    } else if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.IC
+    if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.IC
             || chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.EMOTE
+            || chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.ROLL
+            || chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER
             || (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.WHISPER)) {
         if (currentTab != "ic" && sceneMatches) {
             setICNotifyProperties();
