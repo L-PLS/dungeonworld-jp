@@ -1,7 +1,7 @@
 # Dual Chat Tabs
 
 * **製作者**: L_PLS (Twitter：@L_PLS)
-* **modバージョン**: 0.1.1
+* **modバージョン**: 0.1.2
 
 ### インストール方法
 
