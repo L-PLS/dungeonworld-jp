@@ -179,9 +179,9 @@ Hooks.on("renderChatMessage", (chatMessage, html, data) => {
 });
 
 Hooks.on("diceSoNiceRollComplete", (id) => {
-    //if (currentTab != "ic") {
+    if (!(currentTab == "ic" && !game.settings.get('dual-chat-tabs', 'OutputRolesSub')) && !(currentTab == "ooc" && game.settings.get('dual-chat-tabs', 'OutputRolesSub'))) {
         $("#chat-log .message[data-message-id=" + id + "]").css("display", "none");
-    //}
+    }
 });
 
 Hooks.on("createChatMessage", (chatMessage, content) => {
