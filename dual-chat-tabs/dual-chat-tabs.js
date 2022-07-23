@@ -9,7 +9,11 @@ function isMessageTypeVisible(messageType) {
         case "ic":
             switch (messageType) {
                 case CONST.CHAT_MESSAGE_TYPES.OTHER:
-                    return true;
+                    if(game.settings.get('dual-chat-tabs', 'OutputRolesSub')){
+                        return false;
+                    } else {
+                        return true;
+                    }
                 case CONST.CHAT_MESSAGE_TYPES.OOC:
                     return false;
                 case CONST.CHAT_MESSAGE_TYPES.IC:
@@ -19,13 +23,21 @@ function isMessageTypeVisible(messageType) {
                 case CONST.CHAT_MESSAGE_TYPES.WHISPER:
                     return true;
                 case CONST.CHAT_MESSAGE_TYPES.ROLL:
-                    return true;
+                    if(game.settings.get('dual-chat-tabs', 'OutputRolesSub')){
+                        return false;
+                    } else {
+                        return true;
+                    }
             }
             break;
         case "ooc":
             switch (messageType) {
                 case CONST.CHAT_MESSAGE_TYPES.OTHER:
-                    return false;
+                    if(game.settings.get('dual-chat-tabs', 'OutputRolesSub')){
+                        return true;
+                    } else {
+                        return false;
+                    }
                 case CONST.CHAT_MESSAGE_TYPES.OOC:
                     return true;
                 case CONST.CHAT_MESSAGE_TYPES.IC:
@@ -35,7 +47,11 @@ function isMessageTypeVisible(messageType) {
                 case CONST.CHAT_MESSAGE_TYPES.WHISPER:
                     return false;
                 case CONST.CHAT_MESSAGE_TYPES.ROLL:
-                    return false;
+                    if(game.settings.get('dual-chat-tabs', 'OutputRolesSub')){
+                        return true;
+                    } else {
+                        return false;
+                    }
             }
             break;
         default:
@@ -99,7 +115,7 @@ Hooks.on("renderChatLog", async function (chatLog, html, user) {
 					setClassVisibility($(".type5").filter(".scenespecific"), false);
 					setClassVisibility($(".type5").filter(".gm-roll-hidden"), false);
 
-                    if(tab == "ic"){
+                    if((tab == "ic" && !game.settings.get('dual-chat-tabs', 'OutputRolesSub')) || (tab == "ooc" && game.settings.get('dual-chat-tabs', 'OutputRolesSub'))){
 					    setClassVisibility($(".type5").filter(".scene" + game.user.viewedScene), true);
                         setClassVisibility($(".type5").not(".scenespecific").not(".gm-roll-hidden"), true);
                     } else {
@@ -136,9 +152,9 @@ Hooks.on("renderChatMessage", (chatMessage, html, data) => {
 		  || data.message.type == CONST.CHAT_MESSAGE_TYPES.WHISPER) && sceneMatches) {
             html.css("display", "list-item");
             
-        } else if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER && sceneMatches) {
+        } else if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER && sceneMatches && !game.settings.get('dual-chat-tabs', 'OutputRolesSub')) {
             html.css("display", "list-item");
-        } else if (data.message.type == CONST.CHAT_MESSAGE_TYPES.ROLL && sceneMatches) {
+        } else if (data.message.type == CONST.CHAT_MESSAGE_TYPES.ROLL && sceneMatches && !game.settings.get('dual-chat-tabs', 'OutputRolesSub')) {
             if (!html.hasClass('gm-roll-hidden')) {
                 html.css("display", "list-item");
             }
@@ -150,6 +166,12 @@ Hooks.on("renderChatMessage", (chatMessage, html, data) => {
     } else if (currentTab == "ooc") {
         if (data.message.type == CONST.CHAT_MESSAGE_TYPES.OOC) {
             html.css("display", "list-item");
+        } else if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER && sceneMatches && game.settings.get('dual-chat-tabs', 'OutputRolesSub')) {
+            html.css("display", "list-item");
+        } else if (data.message.type == CONST.CHAT_MESSAGE_TYPES.ROLL && sceneMatches && game.settings.get('dual-chat-tabs', 'OutputRolesSub')) {
+            if (!html.hasClass('gm-roll-hidden')) {
+                html.css("display", "list-item");
+            }
         } else {
             html.css("display", "none");
         }
@@ -157,9 +179,9 @@ Hooks.on("renderChatMessage", (chatMessage, html, data) => {
 });
 
 Hooks.on("diceSoNiceRollComplete", (id) => {
-    if (currentTab != "ic") {
+    //if (currentTab != "ic") {
         $("#chat-log .message[data-message-id=" + id + "]").css("display", "none");
-    }
+    //}
 });
 
 Hooks.on("createChatMessage", (chatMessage, content) => {
@@ -173,8 +195,8 @@ Hooks.on("createChatMessage", (chatMessage, content) => {
 
     if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.IC
             || chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.EMOTE
-            || chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.ROLL
-            || chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER
+            || (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.ROLL && !game.settings.get('dual-chat-tabs', 'OutputRolesSub'))
+            || (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OTHER && !game.settings.get('dual-chat-tabs', 'OutputRolesSub'))
             || (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.WHISPER)) {
         if (currentTab != "ic" && sceneMatches) {
             setICNotifyProperties();
@@ -332,6 +354,16 @@ Hooks.on('init', () => {
         config: true,
         default: 'sub',
         type: String,
+        onChange: debouncedReload
+    });
+
+    game.settings.register('dual-chat-tabs', 'OutputRolesSub', {
+        name: game.i18n.localize("dualchattabs.SETTINGS.OutputRolesSubName"),
+        hint: game.i18n.localize("dualchattabs.SETTINGS.OutputRolesSubHint"),
+        scope: 'world',
+        config: true,
+        default: false,
+        type: Boolean,
         onChange: debouncedReload
     });
 });

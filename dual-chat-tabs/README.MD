@@ -43,6 +43,7 @@ After activating this mod, even if you are a game master with no tokens selected
 
 ### リリースノート
 0.1.1 ダイスロールの結果が通知されていなかったのを修正
+0.1.2 ダイスロールの結果をサブタブに表示するモードを追加
 
 ### ライセンス
 GNU Lesser General Public License
