@@ -1,7 +1,7 @@
 # Dual Chat Tabs
 
 * **製作者**: L_PLS (Twitter：@L_PLS)
-* **modバージョン**: 0.1.2
+* **modバージョン**: 0.1.3
 
 ### インストール方法
 
@@ -44,6 +44,7 @@ After activating this mod, even if you are a game master with no tokens selected
 ### リリースノート
 0.1.1 ダイスロールの結果が通知されていなかったのを修正
 0.1.2 ダイスロールの結果をサブタブに表示するモードを追加
+0.1.3 Forgeの仕様？によりバージョンをあげないと、リリース後の微修正が反映されないことへの対処
 
 ### ライセンス
 GNU Lesser General Public License
