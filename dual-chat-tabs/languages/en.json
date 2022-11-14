@@ -4,5 +4,7 @@
     "dualchattabs.SETTINGS.SecondTabName": "SecondTabName",
     "dualchattabs.SETTINGS.SecondTabNameHint": "The second tab shows the player's statements. If you make a dice roll on this tab, the result will be shown on the first tab.",
     "dualchattabs.SETTINGS.OutputRolesSubName": "Display dice roll results on second tab",
-    "dualchattabs.SETTINGS.OutputRolesSubHint": "If you check the box ON, the dice roll results will display on the second tab."
+    "dualchattabs.SETTINGS.OutputRolesSubHint": "If you check the box ON, the dice roll results will display on the second tab.",
+    "dualchattabs.SETTINGS.GMspeakwithUsertokenName": "Speaks with user-owned tokens",
+    "dualchattabs.SETTINGS.GMspeakwithUsertokenSubHint": "If you check the box ON, When GM Speaks with user-owned tokens, The speaker is changed to GM."
 }

@@ -3,8 +3,8 @@
 	"title": "Dual Chat Tabs",
 	"description": "チャットログが２つのタブに分かれ、セッションのメインの発言と雑談用の発言を分けて行えるようになります",
 	"version": "0.1.3",
-	"minimumCoreVersion": "9",
-	"compatibleCoreVersion": "9",
+	"minimumCoreVersion": "10",
+	"compatibleCoreVersion": "10",
 	"author": "L_PLS",
 	"esmodules": [
 		"./dual-chat-tabs.js"
@@ -27,5 +27,5 @@
 	],
 	"url": "https://github.com/L-PLS/dual-chat-tabs/tree/main/dual-chat-tabs",
 	"manifest": "https://github.com/L-PLS/dual-chat-tabs/releases/latest/download/module.json",
-	"download": "https://github.com/L-PLS/dual-chat-tabs/releases/download/0.1.3/module.zip"
+	"download": "https://github.com/L-PLS/dual-chat-tabs/releases/download/0.1.2/module.zip"
 }

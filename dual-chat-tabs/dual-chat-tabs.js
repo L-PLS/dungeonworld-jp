@@ -211,30 +211,47 @@ Hooks.on("createChatMessage", (chatMessage, content) => {
 });
 
 Hooks.on("preCreateChatMessage", (chatMessage, content) => {
+    let vGMspeakwithUsertoken = 0;
+
+    if (game.user.isGM && game.settings.get('dual-chat-tabs', 'GMspeakwithUsertoken')) {
+        const token = canvas.tokens.get(chatMessage.speaker.token);
+        if (token?.actor?.hasPlayerOwner) {
+            vGMspeakwithUsertoken = 1;
+        }
+    }
 
     if (currentTab == "ooc") {
-        if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.IC) {
-            chatMessage.data._source.type = CONST.CHAT_MESSAGE_TYPES.OOC;
-            chatMessage.data.type = CONST.CHAT_MESSAGE_TYPES.OOC;
-            content.type = CONST.CHAT_MESSAGE_TYPES.OOC;
-            delete (content.speaker);
-            delete (chatMessage.data.speaker);
-            delete (chatMessage.data._source.speaker);
-            console.log(chatMessage);
+        if (chatMessage.type != CONST.CHAT_MESSAGE_TYPES.OOC || vGMspeakwithUsertoken == 1) {
+            const user = (chatMessage.user instanceof User ? chatMessage.user : game.users.get(chatMessage.user));
+
+            if(chatMessage.type == CONST.CHAT_MESSAGE_TYPES.IC || user.name == chatMessage.alias || vGMspeakwithUsertoken == 1){
+                const actor = user.character;
+                let vSpeaker = actor ? { actor: null, alias: actor.data.token.name, token: null } : { actor: null, alias: user.name, token: null };
+
+                let vType = chatMessage.type;
+                if (chatMessage.type == CONST.CHAT_MESSAGE_TYPES.IC){
+                    vType = CONST.CHAT_MESSAGE_TYPES.OOC;
+                    vSpeaker = {actor: null, alias: user.name, token: null};
+                }
+
+                updateChatMessage(chatMessage, {type: vType, speaker: vSpeaker});
+            }
         }
     } else if (currentTab == "ic") {
-        if (chatMessage.data.type == CONST.CHAT_MESSAGE_TYPES.OOC) {
-            chatMessage.data._source.type = CONST.CHAT_MESSAGE_TYPES.IC;
-            chatMessage.data.type = CONST.CHAT_MESSAGE_TYPES.IC;
-            content.type = CONST.CHAT_MESSAGE_TYPES.IC;
+        if (chatMessage.type != CONST.CHAT_MESSAGE_TYPES.IC || vGMspeakwithUsertoken == 1) {
+            const user = (chatMessage.user instanceof User ? chatMessage.user : game.users.get(chatMessage.user));
             
-            const user = game.users.get(chatMessage.data.user);
-            const actor = user.character;
-            const vSpeaker = actor ? { actor: null, alias: actor.data.token.name, token: null } : { actor: null, alias: user.name, token: null };
-
-            chatMessage.data.update({ speaker:vSpeaker });
-            
-            console.log(chatMessage);
+            if(chatMessage.type == CONST.CHAT_MESSAGE_TYPES.OOC || user.name == chatMessage.alias || vGMspeakwithUsertoken == 1){
+                const actor = user.character;
+                const vSpeaker = actor ? { actor: null, alias: actor.data.token.name, token: null } : { actor: null, alias: user.name, token: null };
+                
+                let vType = chatMessage.type;
+                if (chatMessage.type == CONST.CHAT_MESSAGE_TYPES.OOC){
+                    vType = CONST.CHAT_MESSAGE_TYPES.IC;
+                }
+                
+                updateChatMessage(chatMessage, {type: vType, speaker: vSpeaker});
+            }
         }
     }
 });
@@ -320,6 +337,10 @@ function shouldHideDueToStreamView() {
     return false;
 }
 
+function updateChatMessage(chatMessage, ...args) {
+	chatMessage.updateSource.apply(chatMessage, args);
+}
+
 //The Localization here should probably be improved
 Messages.prototype.flush =
     async function () {
@@ -357,6 +378,15 @@ Hooks.on('init', () => {
         onChange: debouncedReload
     });
 
+    game.settings.register('dual-chat-tabs', 'GMspeakwithUsertoken', {
+        name: game.i18n.localize("dualchattabs.SETTINGS.GMspeakwithUsertokenName"),
+        hint: game.i18n.localize("dualchattabs.SETTINGS.GMspeakwithUsertokenHint"),
+        scope: 'world',
+        config: true,
+        default: true,
+        type: Boolean
+    });
+    
     game.settings.register('dual-chat-tabs', 'OutputRolesSub', {
         name: game.i18n.localize("dualchattabs.SETTINGS.OutputRolesSubName"),
         hint: game.i18n.localize("dualchattabs.SETTINGS.OutputRolesSubHint"),

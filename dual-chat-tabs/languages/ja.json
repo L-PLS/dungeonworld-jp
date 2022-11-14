@@ -4,5 +4,7 @@
     "dualchattabs.SETTINGS.SecondTabName": "二つ目のタブ名称",
     "dualchattabs.SETTINGS.SecondTabNameHint": "二つ目のタブではPL発言が表示されます。このタブでダイスロールをした場合、最初のタブに結果が表示されます",
     "dualchattabs.SETTINGS.OutputRolesSubName": "ダイスロールを二つ目のタブに表示",
-    "dualchattabs.SETTINGS.OutputRolesSubHint": "ONにするとダイスロール結果は二つ目のタブに表示されます"
+    "dualchattabs.SETTINGS.OutputRolesSubHint": "ONにするとダイスロール結果は二つ目のタブに表示されます",
+    "dualchattabs.SETTINGS.GMspeakwithUsertokenName": "所有者がユーザーのトークンでの発言",
+    "dualchattabs.SETTINGS.GMspeakwithUsertokenHint": "ONにすると所有者がユーザーのトークンでGMが発言する時、発言者をGMにします"
 }
