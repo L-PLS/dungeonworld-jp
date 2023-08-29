@@ -41,16 +41,16 @@ a.item.rolls.active {}
 }
 
 #icNotification {
-    top: 35px;
+    top: 2px;
     right: 196px;
 }
 
 #oocNotification {
-    top: 35px;
+    top: 2px;
     right: 20px;
 }
 
 #rollsNotification {
-    top: 35px;
+    top: 2px;
     right: 118px;
 }

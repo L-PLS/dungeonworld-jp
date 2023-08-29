@@ -1,7 +1,7 @@
 # Dual Chat Tabs
 
 * **製作者**: L_PLS (Twitter：@L_PLS)
-* **modバージョン**: 0.1.3
+* **modバージョン**: 0.1.5
 
 ### インストール方法
 
@@ -45,6 +45,7 @@ After activating this mod, even if you are a game master with no tokens selected
 0.1.1 ダイスロールの結果が通知されていなかったのを修正
 0.1.2 ダイスロールの結果をサブタブに表示するモードを追加
 0.1.4 FVTTバージョン10対応、所有者が参加者のコマでGMが発言する時のオプションを追加
+0.1.5 FVTTバージョン11対応、通知の位置がずれていたのを修正
 
 ### ライセンス
 GNU Lesser General Public License
