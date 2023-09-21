@@ -1,0 +1,158 @@
+{
+    "label": "装備 (武器)",
+    "mapping": {
+        "tags": "system.tags",
+        "tagsString": "system.tagsString"
+    },
+    "entries": [{
+            "id": "Axe",
+            "name": "アックス",
+            "tags": "[{\"value\":\"近接\"}]",
+            "tagsString": "近接"
+        },
+        {
+            "id": "Battle Axe",
+            "name": "バトルアックス",
+            "tags": "[{\"value\":\"近接\"},{\"value\":\"+1ダメージ\"}]",
+            "tagsString": "近接, +1ダメージ"
+        },
+        {
+            "id": "Bundle of Arrows",
+            "name": "束ねた矢",
+            "tags": "[{\"value\":\"3矢弾\"}]",
+            "tagsString": "3矢弾"
+        },
+        {
+            "id": "Club",
+            "name": "クラブ",
+            "tags": "[{\"value\":\"近接\"}]",
+            "tagsString": "近接"
+        },
+        {
+            "id": "Crossbow",
+            "name": "クロスボウ",
+            "tags": "[{\"value\":\"近距離\"},{\"value\":\"+1ダメージ\"},{\"value\":\"再装填\"}]",
+            "tagsString": "近距離, +1ダメージ, 再装填"
+        },
+        {
+            "id": "Dagger",
+            "name": "ダガー",
+            "tags": "[{\"value\":\"手近\"}]",
+            "tagsString": "手近"
+        },
+        {
+            "id": "Dueling Rapier",
+            "name": "決闘用レイピア",
+            "tags": "[{\"value\":\"近接\"},{\"value\":\"貫通1\"},{\"value\":\"緻密\"}]",
+            "tagsString": "近接, 貫通1, 緻密"
+        },
+        {
+            "id": "Elven Arrows",
+            "name": "エルフの矢",
+            "tags": "[{\"value\":\"4矢弾\"}]",
+            "tagsString": "4矢弾"
+        },
+        {
+            "id": "Fine Bow",
+            "name": "上質なボウ",
+            "tags": "[{\"value\":\"近距離\"},{\"value\":\"遠距離\"}]",
+            "tagsString": "近距離, 遠距離"
+        },
+        {
+            "id": "Flail",
+            "name": "フレイル",
+            "tags": "[{\"value\":\"近接\"},{\"value\":\"+1ダメージ\"}]",
+            "tagsString": "近接, +1ダメージ"
+        },
+        {
+            "id": "Halberd",
+            "name": "ハルバード",
+            "tags": "[{\"value\":\"長物\"},{\"value\":\"+1ダメージ\"},{\"value\":\"両手用\"}]",
+            "tagsString": "長物, +1ダメージ, 両手用"
+        },
+        {
+            "id": "Hunter's Bow",
+            "name": "狩人のボウ",
+            "tags": "[{\"value\":\"近距離\"},{\"value\":\"遠距離\"}]",
+            "tagsString": "近距離, 遠距離"
+        },
+        {
+            "id": "Knife",
+            "name": "ナイフ",
+            "tags": "[{\"value\":\"手近\"}]",
+            "tagsString": "手近"
+        },
+        {
+            "id": "Long Sword",
+            "name": "ロングソード",
+            "tags": "[{\"value\":\"近接\"},{\"value\":\"+1ダメージ\"}]",
+            "tagsString": "近接, +1ダメージ"
+        },
+        {
+            "id": "Mace",
+            "name": "メイス",
+            "tags": "[{\"value\":\"近接\"}]",
+            "tagsString": "近接"
+        },
+        {
+            "id": "Ragged Bow",
+            "name": "粗末なボウ",
+            "tags": "[{\"value\":\"近距離\"}]",
+            "tagsString": "近距離"
+        },
+        {
+            "id": "Rapier",
+            "name": "レイピア",
+            "tags": "[{\"value\":\"近接\"},{\"value\":\"緻密\"}]",
+            "tagsString": "近接, 緻密"
+        },
+        {
+            "id": "Shillelagh",
+            "name": "シレーラ",
+            "tags": "[{\"value\":\"近接\"}]",
+            "tagsString": "近接"
+        },
+        {
+            "id": "Shiv",
+            "name": "シヴ",
+            "tags": "[{\"value\":\"手近\"}]",
+            "tagsString": "手近"
+        },
+        {
+            "id": "Short Sword",
+            "name": "ショートソード",
+            "tags": "[{\"value\":\"近接\"}]",
+            "tagsString": "近接"
+        },
+        {
+            "id": "Spear",
+            "name": "スピア",
+            "tags": "[{\"value\":\"長物\"},{\"value\":\"投擲\"},{\"value\":\"近距離\"}]",
+            "tagsString": "長物, 投擲, 近距離"
+        },
+        {
+            "id": "Staff",
+            "name": "スタッフ",
+            "tags": "[{\"value\":\"近接\"},{\"value\":\"両手用\"}]",
+            "tagsString": "近接, 両手用"
+        },
+        {
+            "id": "Throwing Dagger",
+            "name": "投擲用ダガー",
+            "tags": "[{\"value\":\"投擲\"},{\"value\":\"近距離\"}]",
+            "tagsString": "投擲, 近距離"
+        },
+        {
+            "id": "Two-handed sword",
+            "name": "両手用ソード",
+            "tags": "[{\"value\":\"近接\"},{\"value\":\"+1ダメージ\"},{\"value\":\"両手用\"}]",
+            "tagsString": "近接, +1ダメージ, 両手用"
+        },
+        {
+            "id": "War hammer",
+            "name": "ウォーハンマー",
+            "tags": "[{\"value\":\"近接\"}]",
+            "tagsString": "近接"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "label": "装備 (毒物)",
+    "mapping": {
+        "description": "system.description",
+        "tags": "system.tags",
+        "tagsString": "system.tagsString"
+    },
+    "entries": [{
+            "id": "Bloodweed",
+            "name": "流血草",
+            "description": "<p>治療されるまでの間、この毒を受けた者がダメージを与えるためダイスを振るとき、そのダメージから1d4が差し引かれる。 [[/roll 1d4]]</p>",
+            "tags": "[{\"value\":\"剣呑\"},{\"value\":\"接触\"}]",
+            "tagsString": "剣呑, 接触"
+        },
+        {
+            "id": "Goldenroot",
+            "name": "鮮黄根",
+            "description": "<p>対象は次に目にする生き物を信頼できる味方とみなす。そうでないと判明するまで有効。</p>",
+            "tags": "[{\"value\":\"剣呑\"},{\"value\":\"注入\"}]",
+            "tagsString": "剣呑, 注入"
+        },
+        {
+            "id": "Oil of Tagit",
+            "name": "タギット油",
+            "description": "<p>対象は浅い眠りに落ちる。</p>",
+            "tags": "[{\"value\":\"剣呑\"},{\"value\":\"注入\"}]",
+            "tagsString": "剣呑, 注入"
+        },
+        {
+            "id": "Serpent's Tears",
+            "name": "大蛇の涙",
+            "description": "<p>対象にダメージを与えるものは、ダイスを2回振って、よい方の結果を採用すること。</p>",
+            "tags": "[{\"value\":\"剣呑\"},{\"value\":\"接触\"}]",
+            "tagsString": "剣呑, 接触"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "label": "ダンジョン用装備",
+    "mapping": {
+        "description": "system.description",
+        "tags": "system.tags",
+        "tagsString": "system.tagsString"
+    },
+    "entries": [{
+            "id": "Adventuring Gear",
+            "name": "冒険道具",
+            "description": "<p>冒険道具は、チョーク、棒、釘、ロープなどの、ありふれているものの有用なアイテムを集めたもの。冒険道具をひっくり返して、なにかしら役立つ一般的なアイテムを探すなら、必要とするものを見つけ出せる。使用回数を1減らすこと。</p>"
+        },
+        {
+            "id": "Anti-Toxin",
+            "name": "解毒薬",
+            "description": "<p>解毒薬を飲んだなら、受けている毒の1つが治療する。</p>"
+        },
+        {
+            "id": "Bag of Books",
+            "name": "本の詰まった袋",
+            "description": "<p>本の詰まった袋に、《物言う知見》使用時、テーマにぴったりの本が含まれているなら、本を調べて使用回数を1減らすことで、そのダイス・ロールに+1。</p>"
+        },
+        {
+            "id": "Bandages",
+            "name": "包帯",
+            "description": "<p>数分をかけて他者の傷に包帯を巻くなら、対象のダメージを4点治して、使用回数を1減らすこと。</p>",
+            "tags": "[{\"value\":\"手間取る\"}]",
+            "tagsString": "手間取る"
+        },
+        {
+            "id": "Dungeon Rations",
+            "name": "ダンジョン用保存食",
+            "description": "<p>味は良くも悪くもない。</p>",
+            "tags": "[{\"value\":\"食料\"}]",
+            "tagsString": "食料"
+        },
+        {
+            "id": "Dwarven Hardtack",
+            "name": "ドワーフの乾パン",
+            "description": "<p>ドワーフたちに言わせれば故郷の味。他の種族に言わせれば、養豚場の焼け跡風味。</p>",
+            "tags": "[{\"value\":\"条件：ドワーフ\"}]",
+            "tagsString": "条件：ドワーフ"
+        },
+        {
+            "id": "Elven Bread",
+            "name": "エルフのパン",
+            "description": "<p>エルフの最高の友のみが、この珍しい美味にありつける。</p>",
+            "tags": "[{\"value\":\"食料\"}]",
+            "tagsString": "食料"
+        },
+        {
+            "id": "Halfling Pipeleaf",
+            "name": "ハーフリングのパイプ葉",
+            "description": "<p>ハーフリングのパイプ葉を他者と一緒に吸うなら、使用回数を2減らすことで、その相手との《交渉》に〔次回+1〕。</p>"
+        },
+        {
+            "id": "Healing Potion",
+            "name": "ヒーリングポーション",
+            "description": "<p>ヒーリングポーションを一本飲み干したならなら、自らのダメージを10点治すか、能力減退を1つ除去する（使用者が選択）。</p>"
+        },
+        {
+            "id": "Keg of Dwarven Stout",
+            "name": "ドワーフのスタウト樽",
+            "description": "<p>ドワーフのスタウト樽を開けて、全員に気前よく振る舞うなら、《酒宴》のダイス・ロールに+1。もしもひとりで一樽飲み干すなら、いやというほど泥酔してしまう。</p>"
+        },
+        {
+            "id": "Personal Feast",
+            "name": "おひとりさま用ご馳走",
+            "description": "<p>控えめに言っても豪華。</p>"
+        },
+        {
+            "id": "Poultices and Herbs",
+            "name": "湿布と薬草 ",
+            "description": "<p>他者の傷を湿布と薬草で丁寧に手当するなら、対象のダメージを7点治して、使用回数を1減らすこと。</p>",
+            "tags": "[{\"value\":\"手間取る\"}]",
+            "tagsString": "手間取る"
+        }
+    ]
+}

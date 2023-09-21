@@ -1,0 +1,147 @@
+{
+    "label": "バード：ムーヴ",
+    "mapping": {
+        "description": "system.description",
+        "failure": "system.moveResults.failure.value",
+        "partial": "system.moveResults.partial.value",
+        "success": "system.moveResults.success.value",
+        "choices": "system.choices"
+    },
+    "entries": [{
+            "id": "A Little Help From My Friends",
+            "name": "友の力添えあらば",
+            "description": "<p><strong>他者への<i>《援助》</i>が成功した</strong>なら、このPCも同じく〔次回+1〕を得る。</p>"
+        },
+        {
+            "id": "A Port In The Storm",
+            "name": "嵐に揉まれる避難所",
+            "description": "<p><strong>以前に訪れたことのある文明化された居住地を再訪する</strong>ときは、最後にそこにいたのはいつ頃なのかをGMに伝えること。それ以降、その居住地はどのような変化を遂げたか、GMが述べるだろう。</p>"
+        },
+        {
+            "id": "An Ear For Magic",
+            "name": "魔法を聞き取る耳",
+            "description": "<p><strong>敵が呪文を詠唱するのを耳にした</strong>なら、GMが呪文の名称とその効果を教えてくれる。その内容を足がかりとする行動を取るなら、〔次回+1〕となる。</p>"
+        },
+        {
+            "id": "Arcane Art",
+            "name": "秘術の技芸",
+            "description": "<p><strong>演奏することで基礎的な呪文を織りなす</strong>なら、仲間1体と効果1つを選ぶこと：</p>\n<ul>\n<li>1d8ダメージを癒やす [[/roll 1d8]]</li>\n<li>次のダメージに+1d4</li>\n<li>対象の心が揺り動かされ、「心術」が1つ取り除かれる </li>\n<li>次に誰かが対象への《援助》を成功させたとき、対象は+1ではなく+2を得る</li>\n</ul>\n<p>それからダイス・ロール+【CHA】を行う。",
+            "failure": "",
+            "partial": "＊7-9なら、呪文は効果を発揮するものの、いらぬ注意をひいてしまうか、魔法の残響が他の対象（GMが選択）にも同じ効果を及ぼす。",
+            "success": "＊10+なら、その仲間は選択された効果を受ける。",
+            "choices": " "
+        },
+        {
+            "id": "Bamboozle",
+            "name": "一杯食わせる",
+            "description": "<p><strong>誰かと<i>《交渉》する</i></strong>際、7+なら、対象へ行動が〔次回+1〕される。</p>"
+        },
+        {
+            "id": "Bardic Lore",
+            "name": "吟遊詩人の伝承知識",
+            "description": "<p>専門分野を1つ選択：</p>\n<ul>\n<li>呪文と魔術 </li>\n<li>死者とアンデッド </li>\n<li>既知世界の壮大なる歴史 </li>\n<li>珍しいクリーチャーの動物寓話 </li>\n<li>次元界の天球 </li>\n<li>過去の英雄伝説 </li>\n<li>神々とそのしもべ </li>\n</ul>\n<p><strong>《吟遊詩人の伝承知識》に含まれるある重要なクリーチャー/場所/アイテム（プレイヤーが判断）と初遭遇した</strong>とき、GMに1つ質問できる。それに関わることであればどんな質問でもよい。GMは正直に答えるだろう。GMはその後で、かつてPCが耳にした、どのような物語/歌/伝説に、その情報が含まれていたのか、聞いてくるかもしれない。</p>"
+        },
+        {
+            "id": "Charming & Open",
+            "name": "感じがよく率直",
+            "description": "<p><strong>他者と腹を割って話をする</strong>なら、次のリストから1つ、相手プレイヤーに質問できる。相手は正直に答えなければならない。それから、相手はそのリストから1つ、使用者に質問できる（使用者も正直に答える必要がある）。</p>\n<ul>\n<li>誰に仕えているの？ </li>\n<li>自分に何をして欲しいの？ </li>\n<li>どのようにすれば____________してもらえるの？ </li>\n<li>今現在、本当はどのような感情を抱いているの？ </li>\n<li>一番欲しいものは何？</li>\n</ul>"
+        },
+        {
+            "id": "Con",
+            "name": "詐術",
+            "description": "<p><i>置き換え：《煙に巻く》</i></p>\n<p><strong>誰かと《交渉》する</strong>際、7+なら、対象へ行動が〔次回+1〕される。加えて、対象のプレイヤーに1つ質問することができる。対象は正直に答えなければならない。</p>"
+        },
+        {
+            "id": "Devious",
+            "name": "つかみどころなし",
+            "description": "<p><strong><i>《感じがよく率直》</i>を用いる</strong>とき、「どのようにすれば自分に対して弱点をさらすの？」と聞くこともできる。対象はこの質問を使用者に対して行うことができない。</p>"
+        },
+        {
+            "id": "Duelist’s Block",
+            "name": "決闘人の鉄壁の守り",
+            "description": "<p><i>置き換え：《決闘人の受け流し》</i></p>\n<p><i>《ハックアンドスラッシュ》</i>時、〔次回+2アーマー〕を得る。</p>"
+        },
+        {
+            "id": "Duelist’s Parry",
+            "name": "決闘人の受け流し",
+            "description": "<p><i>《ハックアンドスラッシュ》</i>時、〔次回+1アーマー〕を得る。</p>"
+        },
+        {
+            "id": "Eldritch Chord",
+            "name": "奇異なる和音",
+            "description": "<p><i>置き換え：《奇異なる調べ》</i></p>\n<p><i>《秘術の技芸》</i>を用いるなら、効果を2つ選ぶ。さらにうち1つを選択して、その効果を2倍にできる。</p>"
+        },
+        {
+            "id": "Eldritch Tones",
+            "name": "奇異なる調べ",
+            "description": "<p>このPCの<i>《秘術の技芸》</i>は力に満ちており、1つではなく2つの効果を選ぶことができる。</p>"
+        },
+        {
+            "id": "Healing Chorus",
+            "name": "癒やしの合唱",
+            "description": "<p><i>置き換え：《癒やしの歌》</i></p>\n<p><strong><i>《秘術の技芸》</i>で癒やしをもたらす</strong>ときは、回復量に+2d8。 [[/roll 3d8]]</p>"
+        },
+        {
+            "id": "Healing Song",
+            "name": "癒やしの歌",
+            "description": "<p><strong><i>《秘術の技芸》</i>で癒やしをもたらす</strong>なら、回復量に+1d8。 [[/roll 2d8]]</p>"
+        },
+        {
+            "id": "It Goes To Eleven",
+            "name": "極限の大音声",
+            "description": "<p><strong>（優れたリュートの独奏、力強いブラスの一吹きなどで）熱狂的な演奏を叩き付ける</strong>なら、使用者の発する音を耳にしている対象から1体を選び、ダイス・ロール+【CHA】。",
+            "failure": "",
+            "partial": "＊7-9なら、対象は一番近くにいる自分の仲間を攻撃するものの、使用者は対象の注意を引き、激しい怒りを買ってしまう。",
+            "success": "＊10+なら、対象は攻撃範囲内で一番近くにいる自らの仲間を攻撃する。",
+            "choices": ""
+        },
+        {
+            "id": "Metal Hurlant",
+            "name": "吠え猛るヘビィメタル",
+            "description": "<p><strong>凄まじい叫び声を上げるか、強烈な旋律を奏でる</strong>なら、対象1体を選んでダイス・ロール+【CON】。",
+            "failure": "",
+            "partial": "＊7-9なら、対象に1d10ダメージを与えるものの、音の力が制御不能に陥る。GMが近辺から追加の対象を1体選ぶ。",
+            "success": "＊10+なら、対象は1d10のダメージを受け、数分間、耳が聞こえなくなってしまう。",
+            "choices": ""
+        },
+        {
+            "id": "Multiclass Dabbler",
+            "name": "マルチクラス：初心者",
+            "description": "<p>他のクラスからムーヴを1つ獲得。そのムーヴについては、このPCのレベルが1低いものとして扱うこと。</p>"
+        },
+        {
+            "id": "Multiclass Initiate",
+            "name": "マルチクラス：訓練生",
+            "description": "<p>他のクラスからムーヴを1つ獲得。そのムーヴについては、このPCのレベルが1低いものとして扱うこと。</p>"
+        },
+        {
+            "id": "Multiclass Master",
+            "name": "マルチクラス：達人",
+            "description": "<p>他のクラスからムーヴを1つ獲得。そのムーヴについては、取得者のレベルが1低いものとして扱うこと。</p>"
+        },
+        {
+            "id": "Reputation",
+            "name": "名声",
+            "description": "<p><strong>初めて会う人物が、このPCについての歌を耳にしたことがある</strong>なら、ダイス・ロール+【CHA】。",
+            "failure": "",
+            "partial": "＊7-9なら、相手がこちらに関して耳にしたことを1つGMに話せば、GMがもう1つを教えてくれる。",
+            "success": "＊10+なら、相手が使用者に関して耳にしたことを2つ、GMに話そう。",
+            "choices": ""
+        },
+        {
+            "id": "Unforgettable Face",
+            "name": "忘れがたき容貌",
+            "description": "<p><strong>以前に会ったことがある人物（プレイヤーが決定）としばらくぶりに顔を合わせる</strong>とき、相手への行動が〔次回+1〕される。</p>"
+        },
+        {
+            "id": "Vicious Blast",
+            "name": "峻烈なる大音響",
+            "description": "<p><i>置き換え：《峻烈なる不協和音》</i></p>\n<p><strong><i>《秘術の技芸》</i>でボーナス・ダメージを付与する</strong>ときは、追加で+2d4ダメージ。</p>"
+        },
+        {
+            "id": "Vicious Cacophony",
+            "name": "峻烈なる不協和音",
+            "description": "<p><strong><i>《秘術の技芸》</i>でボーナス・ダメージを付与する</strong>なら、追加で+1d4ダメージ。</p>"
+        }
+    ]
+}

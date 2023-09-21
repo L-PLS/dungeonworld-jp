@@ -1,0 +1,32 @@
+{
+	"name": "dungeonworld-jp",
+	"title": "ダンジョン・ワールド日本語化MOD",
+	"description": "ダンジョン・ワールドを日本語化します",
+	"author": "L_PLS",
+	"systems": ["dungeonworld"],
+	"version": "0.0.1",
+	"minimumCoreVersion": "10.288",
+	"compatibleCoreVersion":"10.288",
+	"languages": [
+		{
+			"lang": "ja",
+			"system":"dungeonworld",
+			"name": "日本語",
+			"path": "lang/ja.json"
+		}
+	],
+	"esmodules": ["babele-register.js"],
+	"system": ["dungeonworld"],
+	"relationships": {
+	  "systems": [{
+	      "id": "dungeonworld",
+	      "type": "system",
+	      "compatibility": {"verified": "1.6.2"}
+	  }],
+	  "modules": [{
+	      "id": "babele",
+	      "type": "module",
+	      "compatibility": {"verified": "2.3.4"}
+	  }]
+	}
+ }

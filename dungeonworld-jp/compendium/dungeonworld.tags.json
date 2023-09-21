@@ -1,0 +1,307 @@
+{
+    "label": "タグ",
+    "mapping": {
+        "description": "system.description"
+    },
+    "entries": [{
+            "id": "+1 armor",
+            "name": "+1アーマー",
+            "description": "<p>［+nアーマー］：装着者を保護し、他の防具と重複する。この値はアーマーの合計値に加算される。</p>"
+        },
+        {
+            "id": "+1 damage",
+            "name": "+1ダメージ",
+            "description": "<p>［+nダメージ］：敵を著しく害する。ダメージを与える際、nを加える。</p>"
+        },
+        {
+            "id": "+2 damage",
+            "name": "+2ダメージ",
+            "description": "<p>［+nダメージ］：敵を著しく害する。ダメージを与える際、nを加える。</p>"
+        },
+        {
+            "id": "+3 damage",
+            "name": "+3ダメージ",
+            "description": "<p>［+nダメージ］：敵を著しく害する。ダメージを与える際、nを加える。</p>"
+        },
+        {
+            "id": "+1 forward",
+            "name": "+1次回",
+            "description": "<p>Du erhälst auf deinen nächsten Wurf für einen Spielzug (nicht auf Schaden) einen Bonus von +1. Der erhaltene Bonus kann auch anders lauten. Es kann auch eine Bedingung eingeschlossen sein, wie „erhalte einmalig +1 auf ...“ – in diesem Fall bekommst du den Bonus nur auf diesen, und nicht auf andere Spielzüge.</p>"
+        },
+        {
+            "id": "+1 ongoing",
+            "name": "+1継続",
+            "description": "<p>Du erhälst auf alle folgenden Würfe für Spielzüge (nicht auf Schaden) einen Bonus von +1. Es kann auch eine Bedingung eingeschlossen sein, wie „erhalte dauerhaft +1 auf ...“. Ein dauerhafter Bonus nennt stets auch, unter welchen Umständen er beendet wird.</p>"
+        },
+        {
+            "id": "-1 forward",
+            "name": "-1次回",
+            "description": "<p>Du erhälst auf deinen nächsten Wurf für einen Spielzug (nicht auf Schaden) einen Malus von -1. Der erhaltene Malus kann auch anders lauten. Es kann auch eine Bedingung eingeschlossen sein, wie „erhalte einmalig -1 auf ...“ – in diesem Fall bekommst du den Malus nur auf diesen, und nicht auf andere Spielzüge.</p>"
+        },
+        {
+            "id": "-1 ongoing",
+            "name": "-1継続",
+            "description": "<p>Du erhälst auf alle folgenden Würfe für Spielzüge (nicht auf Schaden) einen Malus von -1. Es kann auch eine Bedingung eingeschlossen sein, wie „erhalte dauerhaft -1 auf ...“. Ein dauerhafter Malus nennt stets auch, unter welchen Umständen er beendet wird.</p>"
+        },
+        {
+            "id": "1 ammo",
+            "name": "矢弾1",
+            "description": "<p>［矢弾n］：適した射撃武器用の矢弾の数（残弾数）。nとして表記される数字は、個別の矢やスリング用の石の具体的な数ではなく、どれぐらいの量が手元に残っているかを表す。</p>"
+        },
+        {
+            "id": "1 armor",
+            "name": "1アーマー",
+            "description": "<p>［nアーマー］：損害から装備者を保護し、ダメージを和らげる。ダメージを受けたときは、被った合計値から自らのアーマー分を差し引く。ｎアーマーのついたアイテムを1つ以上所持する場合は、最も高い値のみが適用される。</p>"
+        },
+        {
+            "id": "1 piercing",
+            "name": "貫通1",
+            "description": "<p>［貫通n］：防具を貫く。貫通n付きのダメージを与えるなら、その攻撃については、nの値を敵のアーマーから差し引く。</p>"
+        },
+        {
+            "id": "2 piercing",
+            "name": "貫通2",
+            "description": "<p>［貫通n］：防具を貫く。貫通n付きのダメージを与えるなら、その攻撃については、nの値を敵のアーマーから差し引く。</p>"
+        },
+        {
+            "id": "2 armor",
+            "name": "2アーマー",
+            "description": "<p>［nアーマー］：損害から装備者を保護し、ダメージを和らげる。ダメージを受けたときは、被った合計値から自らのアーマー分を差し引く。ｎアーマーのついたアイテムを1つ以上所持する場合は、最も高い値のみが適用される。</p>"
+        },
+        {
+            "id": "2 ammo",
+            "name": "矢弾2",
+            "description": "<p>［矢弾n］：適した射撃武器用の矢弾の数（残弾数）。nとして表記される数字は、個別の矢やスリング用の石の具体的な数ではなく、どれぐらいの量が手元に残っているかを表す。</p>"
+        },
+        {
+            "id": "3 ammo",
+            "name": "矢弾3",
+            "description": "<p>［矢弾n］：適した射撃武器用の矢弾の数（残弾数）。nとして表記される数字は、個別の矢やスリング用の石の具体的な数ではなく、どれぐらいの量が手元に残っているかを表す。</p>"
+        },
+        {
+            "id": "4 ammo",
+            "name": "矢弾4",
+            "description": "<p>［矢弾n］：適した射撃武器用の矢弾の数（残弾数）。nとして表記される数字は、個別の矢やスリング用の石の具体的な数ではなく、どれぐらいの量が手元に残っているかを表す。</p>"
+        },
+        {
+            "id": "3 armor",
+            "name": "3アーマー",
+            "description": "<p>［nアーマー］：損害から装備者を保護し、ダメージを和らげる。ダメージを受けたときは、被った合計値から自らのアーマー分を差し引く。ｎアーマーのついたアイテムを1つ以上所持する場合は、最も高い値のみが適用される。</p>"
+        },
+        {
+            "id": "3 piercing",
+            "name": "貫通3",
+            "description": "<p>［貫通n］：防具を貫く。貫通n付きのダメージを与えるなら、その攻撃については、nの値を敵のアーマーから差し引く。</p>"
+        },
+        {
+            "id": "4 ammo",
+            "name": "矢弾4",
+            "description": "<p>［矢弾n］：適した射撃武器用の矢弾の数（残弾数）。nとして表記される数字は、個別の矢やスリング用の石の具体的な数ではなく、どれぐらいの量が手元に残っているかを表す。</p>"
+        },
+        {
+            "id": "Amorphous",
+            "name": "不定形",
+            "description": "<p>生体構造と器官は奇怪で自然の理に反する。</p>"
+        },
+        {
+            "id": "Applied",
+            "name": "注入",
+            "description": "<p>［注入］：慎重に個人に注入するか、その人物が飲み食いする物に混入させた場合のみ有効。</p>"
+        },
+        {
+            "id": "Awkward",
+            "name": "扱いにくい",
+            "description": "<p>大きすぎり重すぎたりするので、使うのが難しい。</p>"
+        },
+        {
+            "id": "Cautious",
+            "name": "慎重",
+            "description": "<p>攻撃よりも生き残ることを重んじる。</p>"
+        },
+        {
+            "id": "Close",
+            "name": "近接",
+            "description": "<p>［近接］：腕の届く距離プラス1〜2フィートにあるものへの攻撃に使用できる。</p>"
+        },
+        {
+            "id": "Clumsy",
+            "name": "扱いにくい",
+            "description": "<p>［扱いにくい］：動き回るのが難しくなるので、これを使用している間は〔継続-1〕となる。このペナルティは累積する。</p>"
+        },
+        {
+            "id": "Construct",
+            "name": "コンストラクト",
+            "description": "<p>生まれたのではなく、作られた存在。</p>"
+        },
+        {
+            "id": "Dangerous",
+            "name": "剣呑",
+            "description": "<p>［剣呑］：問題を引き起こしがち。適切な予防策を欠く扱いをしたなら、GMは好きなように、その馬鹿げた所業の成り行きを発生させることができる。</p>"
+        },
+        {
+            "id": "Devious",
+            "name": "悪辣",
+            "description": "<p>主たる危険は、単純な戦闘における衝突以外のところにある。</p>"
+        },
+        {
+            "id": "Far",
+            "name": "遠距離",
+            "description": "<p>［遠距離］：声の届く範囲にあるものへの攻撃に使用できる。</p>"
+        },
+        {
+            "id": "Forceful",
+            "name": "強烈",
+            "description": "<p>［強烈］：相手を1歩後退させることができる。相手が転倒する可能性もある。</p>"
+        },
+        {
+            "id": "Group",
+            "name": "一団",
+            "description": "<p>通常、3〜6体程度の少数集団でいるところを目撃される。</p>"
+        },
+        {
+            "id": "Hand",
+            "name": "手近",
+            "description": "<p>［手近］：手の届く範囲内のものへの攻撃に使用できる。</p>"
+        },
+        {
+            "id": "Hoarder",
+            "name": "蓄財",
+            "description": "<p>ほぼ確実に財宝を持つ。</p>"
+        },
+        {
+            "id": "Horde",
+            "name": "大群",
+            "description": "<p>1体を見かけたなら、もっといる。さらにたくさんいる。</p>"
+        },
+        {
+            "id": "Huge",
+            "name": "超大型",
+            "description": "<p>小さな家屋かそれ以上の大きさ。</p>"
+        },
+        {
+            "id": "Ignores Armor",
+            "name": "アーマー無効",
+            "description": "<p>［アーマー無効］：これにより与えられたダメージからは、アーマーの値が差し引かれない。</p>"
+        },
+        {
+            "id": "Intelligent",
+            "name": "知的",
+            "description": "<p>利口であり、中には複数の技能を修得しているものもいる。GMは、特別な訓練を反映したタグ（[魔法使い]や[戦士]など）を追加して、モンスターを改造することができる。</p>"
+        },
+        {
+            "id": "Large",
+            "name": "大型",
+            "description": "<p>ヒューマンよりずっと大きく、だいたい荷馬車ぐらい。</p>"
+        },
+        {
+            "id": "Magical",
+            "name": "魔法存在",
+            "description": "<p>生来、頭のてっぺんからつま先まで魔法が行き渡っている。</p>"
+        },
+        {
+            "id": "Messy",
+            "name": "無残",
+            "description": "<p>［無残］：とりわけ破壊的な方法でダメージを発生させ、人や物を引き裂く。</p>"
+        },
+        {
+            "id": "Near",
+            "name": "近距離",
+            "description": "<p［近距離］：相手の白目が視認可能な距離なら、攻撃に使用できる。</p>"
+        },
+        {
+            "id": "Organized",
+            "name": "組織的",
+            "description": "<p>集団を構築することで、生存の一助としている。1体が倒されれば、残りは激怒することだろう。単体でも危険を知らせるかもしれない。</p>"
+        },
+        {
+            "id": "Planar",
+            "name": "別次元界",
+            "description": "<p>この世界の外から来た。</p>"
+        },
+        {
+            "id": "Precise",
+            "name": "緻密",
+            "description": "<p>［緻密］：丁寧な攻撃に寄与する。この武器を用いて《ハックアンドスラッシュ》するなら、【STR】ではなく【DEX】を用いる。</p>"
+        },
+        {
+            "id": "Ration",
+            "name": "食料",
+            "description": "<p>［食料］：食用。程度の差はある。</p>"
+        },
+        {
+            "id": "Reach",
+            "name": "長物",
+            "description": "<p>［長物］：数フィート（おそらく10フィート範囲）離れているものへの攻撃に使用できる（注：読みは「ながもの」）。</p>"
+        },
+        {
+            "id": "Reload",
+            "name": "再装填",
+            "description": "<p［再装填］：これを用いて攻撃してから、もう一度攻撃が可能な状態に戻すのに時間を要する。</p>"
+        },
+        {
+            "id": "Requires",
+            "name": "条件: ",
+            "description": "<p>［条件］：ある種族にとってのみ有用。条件に合わないなら、たとえ効果があったとしても僅か。</p>"
+        },
+        {
+            "id": "Requires Dwarf",
+            "name": "条件：ドワーフ",
+            "description": "<p>［条件］：ある種族にとってのみ有用。条件に合わないなら、たとえ効果があったとしても僅か。</p>"
+        },
+        {
+            "id": "Slow",
+            "name": "手間取る",
+            "description": "<p>［手間取る］：使用するのに数分程度かかる。</p>"
+        },
+        {
+            "id": "Small",
+            "name": "小型",
+            "description": "<p>ハーフリング程度の大きさ。</p>"
+        },
+        {
+            "id": "Solitary",
+            "name": "単体",
+            "description": "<p>独りで生き、独力で戦う。</p>"
+        },
+        {
+            "id": "Stealthy",
+            "name": "隠密",
+            "description": "<p>発見されない振る舞いができ、意外なところからの攻撃を好む。</p>"
+        },
+        {
+            "id": "Stun",
+            "name": "スタン",
+            "description": "<p>［スタン］：これを用いて攻撃するなら、通常ダメージではなくスタン・ダメージが発生する。</p>"
+        },
+        {
+            "id": "Terrifying",
+            "name": "恐怖存在",
+            "description": "<p>存在そのものや外見が恐怖を呼び起こす。</p>"
+        },
+        {
+            "id": "Thrown",
+            "name": "投擲",
+            "description": "<p>［投擲］：他者に投げつけることで傷を負わせる。この武器を用いて《射撃》するなら、7-9時に「矢弾を減らす」が選べない。投擲したなら、回収するまで失われてしまう。</p>"
+        },
+        {
+            "id": "Tiny",
+            "name": "極小",
+            "description": "<p>ハーフリングよりもずっと小さい。</p>"
+        },
+        {
+            "id": "Touch",
+            "name": "接触",
+            "description": "<p>［接触］：対象の皮膚に触れさせることで使用できる。</p>"
+        },
+        {
+            "id": "Two-handed",
+            "name": "両手用",
+            "description": "<p>［両手用］：効果的に用いるには、手が2つ要る。</p>"
+        },
+        {
+            "id": "Worn",
+            "name": "装着",
+            "description": "<p>［装着］：用いるには、身につける必要がある。</p>"
+        }
+    ]
+}

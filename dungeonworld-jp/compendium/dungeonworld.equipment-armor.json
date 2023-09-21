@@ -1,0 +1,50 @@
+{
+    "label": "装備 (防具)",
+    "mapping": {
+        "tags": "system.tags",
+        "tagsString": "system.tagsString"
+    },
+    "entries": [{
+            "id": "Chainmail",
+            "name": "チェインメイル",
+            "tags": "[{\"value\":\"1アーマー\"},{\"value\":\"装着\"}]",
+            "tagsString": "1アーマー, 装着"
+        },
+        {
+            "id": "Hide Armor",
+            "name": "ハイド",
+            "tags": "[{\"value\":\"1アーマー\"},{\"value\":\"装着\"}]",
+            "tagsString": "1アーマー, 装着"
+        },
+        {
+            "id": "Leather Armor",
+            "name": "レザー",
+            "tags": "[{\"value\":\"1アーマー\"},{\"value\":\"装着\"}]",
+            "tagsString": "1アーマー, 装着"
+        },
+        {
+            "id": "Ostentatious Clothes",
+            "name": "人目を引く衣装",
+            "tags": "[{\"value\":\"装着\"}]",
+            "tagsString": "装着"
+        },
+        {
+            "id": "Plate",
+            "name": "プレートアーマー",
+            "tags": "[{\"value\":\"3アーマー\"},{\"value\":\"装着\"},{\"value\":\"扱いにくい\"}]",
+            "tagsString": "3アーマー, 装着, 扱いにくい"
+        },
+        {
+            "id": "Scale Mail",
+            "name": "スケイルメイル",
+            "tags": "[{\"value\":\"2アーマー\"},{\"value\":\"装着\"},{\"value\":\"扱いにくい\"}]",
+            "tagsString": "2アーマー, 装着, 扱いにくい"
+        },
+        {
+            "id": "Shield",
+            "name": "シールド",
+            "tags": "[{\"value\":\"+1アーマー\"}]",
+            "tagsString": "+1アーマー"
+        }
+    ]
+}
