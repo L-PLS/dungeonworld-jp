@@ -5,8 +5,8 @@
 	"author": "L_PLS",
 	"systems": ["dungeonworld"],
 	"version": "0.0.1",
-	"minimumCoreVersion": "10.288",
-	"compatibleCoreVersion":"10.288",
+	"minimumCoreVersion": "11",
+	"compatibleCoreVersion":"11",
 	"languages": [
 		{
 			"lang": "ja",
